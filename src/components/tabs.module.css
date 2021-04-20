@@ -1,0 +1,27 @@
+.tab {
+  border: 1px solid #99f;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #fff;
+}
+
+.inactive {
+  background-color: #ccc;
+}
+
+.body {
+  padding: 1rem;
+  cursor: pointer;
+}
+
+@keyframes fadein {
+  0%   { filter: opacity(0.0); }
+  100% { filter: opacity(1.0); }
+}
+
+.body {
+  animation: fadein 250ms linear;
+}

@@ -1,9 +1,26 @@
-/* add css module styles here (optional) */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
-.test {
-  margin: 2em;
-  padding: 0.5em;
-  border: 2px solid #000;
-  font-size: 2em;
-  text-align: center;
+.wrapper {
+  border: 1px solid #f99;
+}
+
+.tray {
+  border: 1px solid #9f9;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.bodyContainer {
+  position: relative;
+  border: 1px solid black;
+  overflow: hidden;
+  filter: opacity(1.0);
+  transition: min-height 250ms, max-height 250ms, filter 250ms;
+}
+.bodyContainer.changing {
+  filter: opacity(0.0);
 }
